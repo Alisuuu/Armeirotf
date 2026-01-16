@@ -1,63 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitch Uploader Extension</title>
-    <style>
-        body { 
-            font-family: sans-serif; 
-            background-color: #18181b; 
-            color: white; 
-            padding: 15px;
-        }
-        input, button {
-            display: block;
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 4px;
-            border: 1px solid #555;
-            background-color: #2d2d2d;
-            color: white;
-        }
-        button {
-            background-color: #9147ff;
-            cursor: pointer;
-        }
-        #divUpload {
-            display: none;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #444;
-        }
-        #preview {
-            max-width: 100%;
-            margin-top: 15px;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body>
-
-    <h2>Login com E-mail</h2>
-    <div id="divLogin">
-        <input type="email" id="inputEmail" placeholder="Seu e-mail">
-        <button onclick="pedirCodigo()">1. Pedir Código</button>
-        
-        <input type="text" id="inputCodigo" placeholder="Código de 4 dígitos">
-        <button onclick="fazerLogin()">2. Fazer Login</button>
-    </div>
-
-    <div id="divUpload">
-        <h2>Fazer Upload</h2>
-        <input type="file" id="inputFile" accept="image/png, image/jpeg, image/gif">
-        <button onclick="enviarImagem()">Enviar Imagem</button>
-        <img id="preview" src="" alt="Pré-visualização do upload.">
-    </div>
-
-    <script src="script.js"></script>
-    <!-- Se estiver usando o Twitch Helper -->
-    <!-- <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script> -->
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitch Extension</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
