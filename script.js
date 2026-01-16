@@ -1,5 +1,5 @@
 // TODO: Substitua pela URL do seu backend de produção.
-const API_URL = 'https://sua-url-de-backend.com'; 
+const API_URL = 'https://armeirot.vercel.app'; 
 
 // Variável para guardar o token. Em uma aplicação real, você pode querer
 // um método mais robusto para persistir o login entre sessões.
